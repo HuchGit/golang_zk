@@ -14,7 +14,7 @@ func must(err error) {
 }
 
 func connect() *zk.Conn {
-    zkList := []string{"zk.cluster.yz"}
+    zkList := []string{"zk.test"}
     conn, _, err := zk.Connect(zkList, time.Second)
     must(err)
     return conn
